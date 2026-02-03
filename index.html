@@ -68,7 +68,7 @@
         #noBtn {
             background-color: #fff;
             color: #d63384;
-            position: relative; /* Changed to relative initially */
+            position: relative;
         }
 
         /* Celebration Screen */
@@ -80,6 +80,7 @@
 
         #celebration img {
             width: 300px;
+            height: auto;
             border-radius: 15px;
             margin-bottom: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -166,8 +167,8 @@
     <!-- Celebration Page -->
     <div class="container" id="celebration">
         <h1>Yaay!! pakhin will be my valentine forever ❤️</h1>
-        <!-- Cute animated gif -->
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3R6eW92eXF6eXF6eXF6eXF6eXF6eXF6eXF6eXF6eXF6/26BRv0ThflsKCqLXG/giphy.gif" alt="Romantic Bear Hug">
+        <!-- Updated Image Source: Reliable Tenor Link -->
+        <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Romantic Bear Hug">
     </div>
 
     <div class="footer">Created by Mehrab Hossain</div>
@@ -203,7 +204,6 @@
                 }
 
                 var particleCount = 50 * (timeLeft / duration);
-                // since particles fall down, start a bit higher than random
                 confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
                 confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
             }, 250);
